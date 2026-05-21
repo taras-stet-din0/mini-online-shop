@@ -3,7 +3,7 @@ const cartWrapper = document.querySelector('.cart-wrapper');
 window.addEventListener('click', function(event){
     if(event.target.hasAttribute('data-cart')){
         const cart = event.target.closest('.card');
-
+ 
         const productInfo = {
             id: cart.dataset.id,
             imgSrc: cart.querySelector('.product-img').getAttribute('src'),
