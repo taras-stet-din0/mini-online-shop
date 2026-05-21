@@ -1,16 +1,16 @@
-const list = document.querySelector('product-cards');
+const list = document.querySelector('#product-cards');
 
 fetch('./products.json')
   .then(response => response.json())
   .then(products => {
-    products.forEach(products => {
+    products.forEach(product => {
     const card = `
         <div class="col-md-6">
-			<div class="card mb-4" data-id="${products.data-id}">
-				<img class="product-img" src="${products.productImg}" alt="">
+			<div class="card mb-4" data-id="${product.id}">
+				<img class="product-img" src="${product.productImg}" alt="">
 				<div class="card-body text-center">
-					<h4 class="item-title">${products.title}</h4>
-					<p><small data-items-in-box class="text-muted">${products.itemsInBox}</small></p>
+					<h4 class="item-title">${product.title}</h4>
+					<p><small data-items-in-box class="text-muted">${product.itemsInBox}</small></p>
 
 					<div class="details-wrapper">
 						<div class="items counter-wrapper">
@@ -20,8 +20,8 @@ fetch('./products.json')
 						</div>
 
 						<div class="price">
-							<div class="price__weight">${products.weight}</div>
-							<div class="price__currency">${products.price}</div>
+							<div class="price__weight">${product.weight}</div>
+							<div class="price__currency">${product.price}</div>
 						</div>
 					</div>
 
