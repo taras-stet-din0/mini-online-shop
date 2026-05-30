@@ -1,37 +1,28 @@
-# Hi, I'm Taras 
+# Mini Online Shop
 
-  Student preparing for a one-year internship (FOS-Jahrespraktikum)
-in the field of Fachinformatik – Anwendungsentwicklung.
 
-  *Schüler – Bewerbung um ein FOS-Jahrespraktikum im Bereich
-Fachinformatik (Anwendungsentwicklung) an der Johann-Philipp-Reis-Schule
-Friedberg, ab August 2026.*
 
----
+🔗 Live demo: [https://taras-stet-din0.github.io/repo-name/](link)
 
-###  What I'm doing right now
-- Building small web projects to practice and improve every week
-- Focusing on clean, readable JavaScript and responsive layouts
-- Looking for a company near Friedberg / Frankfurt for my FOS internship
+!Screenshot (http://screenshot.png/)
 
-###  Tech I work with
-- HTML5, CSS3 (Flexbox / Grid)
-- JavaScript (ES6, DOM, Canvas API)
-- Basics of Node.js
-- Git & GitHub
+## Features
+- [Feature 1, e.g. product list loaded from JSON]
+- [Feature 2, e.g. shopping cart with localStorage]
+- [Feature 3, e.g. responsive layout]
 
-###  My projects
-- 🛒 Mini Online Shop (https://github.com/taras-stet-din0/mini-online-shop) —
-  product list, shopping cart and total price (JavaScript, localStorage)
-- 🎮 Canvas Arcade Game (https://github.com/taras-stet-din0/canvas-arcade-game) —
-  browser game built with the Canvas API and game logic in JavaScript
-- 🌐 Personal Homepage (https://github.com/taras-stet-din0/personal-homepage) —
-  responsive layout practice with HTML & CSS
+## Tech stack
+- HTML5, CSS3 (Flexbox/Grid)
+- JavaScript (ES6)
+- [+ Canvas API / fetch API / etc. if used]
 
-###  Languages
-- Russian / Ukrainian — native
-- German — B1
-- English — B1
+## How to run locally
+1. Clone the repository: git clone [url]
+2. Open index.html in your browser
 
-###  Contact
-- Email: tarasstetsenko69@gmail.com
+## What I learned
+[1–2 sentences: e.g. "Working with the DOM, handling events, and storing
+data in localStorage."]
+
+## Status
+[Finished / In progress]
