@@ -55,12 +55,17 @@
 					<!-- Оформить заказ -->
 					<div id="order-form" class="card-body border-top none">
 						<h5 class="card-title">Оформить заказ</h5>
-						<form>
+						<form id="orderForm" action="#" method="POST" novalidate data-js-form>
 							<div class="form-group">
-								<input type="text" id="name" placeholder="Ваше имя">
-								<input type="text" class="form-control" placeholder="Ваш номер телефона">
-								<input type="text" id="address" placeholder="Адрес доставки">
-								<textarea id="comment" placeholder="Комментарий"></textarea>
+								<input type="text" class="form-control" placeholder="Ваше имя" required><span class="field-error"></span>
+								<input type="text" class="form-control" placeholder="Ваш номер телефона" required><span class="field-error"></span>
+								<input type="text" class="form-control" placeholder="Адрес доставки" required><span class="field-error"></span>
+								<fieldset class="radios">
+									<label class="form-check-label">Способ оплаты:</label>
+									<input type="radio" class="form-check-input" value="Наличными" required>
+									<input type="radio" class="form-check-input" value="Картой" required>
+								</fieldset>
+								<textarea id="comment" class="form-control" placeholder="Комментарий"></textarea>
 							</div>
 							<button type="submit" class="btn btn-primary">Заказать</button>
 						</form>
