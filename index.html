@@ -57,13 +57,25 @@
 						<h5 class="card-title">Оформить заказ</h5>
 						<form id="orderForm" action="#" method="POST" novalidate data-js-form>
 							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Ваше имя" required><span class="field-error"></span>
-								<input type="text" class="form-control" placeholder="Ваш номер телефона" required><span class="field-error"></span>
-								<input type="text" class="form-control" placeholder="Адрес доставки" required><span class="field-error"></span>
+								<input type="text" class="form-control" placeholder="Ваше имя" required aria-errormessage="name-error"><span class="field-error" id="name-error"></span>
+								<input type="text" class="form-control" min-length="8" placeholder="Ваш номер телефона" required aria-errormessage="phone-error"><span class="field-error" id="phone-error"></span>
+								<input type="text" class="form-control" placeholder="Адрес доставки" required aria-errormessage="address-error"><span class="field-error" id="address-error"></span>
 								<fieldset class="radios">
 									<label class="form-check-label">Способ оплаты:</label>
-									<input type="radio" class="form-check-input" value="Наличными" required>
-									<input type="radio" class="form-check-input" value="Картой" required>
+									<input type="radio"
+									 class="form-check-input"
+									  value="Наличными"
+									   required
+									    aria-errormessage="payment-error"
+										/>
+									<label class="form-check-label">Наличными</label>
+									<span class="field-error" id="payment-error"></span>
+									<input type="radio" 
+									class="form-check-input" 
+									value="Картой" 
+									required
+									/>
+									<label class="form-check-label">Картой</label>
 								</fieldset>
 								<textarea id="comment" class="form-control" placeholder="Комментарий"></textarea>
 							</div>
